@@ -1,7 +1,13 @@
 # pyrefly: ignore [missing-import]
 import aiosqlite
 import logging
+import os
 from config import DB_PATH
+
+# Ensure parent directory of DB_PATH exists
+db_dir = os.path.dirname(DB_PATH)
+if db_dir:
+    os.makedirs(db_dir, exist_ok=True)
 
 log = logging.getLogger(__name__)
 
