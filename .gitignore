@@ -1,0 +1,30 @@
+# Environment variables (DO NOT COMMIT)
+.env
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Database file (generated at runtime)
+*.db
+*.sqlite3
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Pyrefly
+pyrefly.toml
+
+# OS
+.DS_Store
+Thumbs.db
